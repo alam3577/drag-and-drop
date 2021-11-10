@@ -1,0 +1,1460 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+
+.mainBG {
+  background: linear-gradient(
+      0deg,
+      rgb(255 255 255 / 70%),
+      rgb(255 255 255 / 70%)
+    ),
+    url(./assets/img/marble-bg.jpeg);
+  background-size: cover;
+  height: 100vh;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+  overflow: hidden;
+}
+
+.page-animate {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "HoeflerText-Regular";
+  color: #707070;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  height: 56px;
+  width: 56px;
+  border-radius: 14px;
+  position: relative;
+  border: none;
+  background: white;
+  -webkit-box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 40%);
+  box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 40%);
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: rgb(245 245 245);
+}
+
+.btn:active {
+  -webkit-box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 40%);
+  box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 40%);
+  transform: translateY(2px);
+}
+
+.btn:focus {
+  -webkit-box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 40%);
+  box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 40%);
+}
+
+.btn img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  border-radius: 100px;
+}
+
+.add {
+  height: 88px;
+  width: 88px;
+}
+
+.ui-example .box {
+  float: left;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 0px auto !important;
+  transition: 0.9s;
+  height: 0 !important;
+}
+
+.ui-example .c-box {
+  transition: 0.5s cubic-bezier(0.76, 0.1, 0.29, 0.9) !important;
+  height: 330px !important;
+  bottom: 0;
+}
+
+.title {
+  font-family: "HoeflerText-Italic";
+  color: #d1a067;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 36px;
+  left: 50%;
+  font-size: 22px;
+}
+.inst-title {
+  font-family: "HoeflerText-Italic";
+  color: #d1a067;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 276px;
+  left: 50%;
+  font-size: 22px;
+}
+
+.btn-inner {
+  background: none;
+  border: none;
+  margin: 15px;
+  cursor: pointer;
+  opacity: 0.45;
+}
+
+.btn-inner:hover {
+  opacity: 0.65;
+  transition: all 0.2s;
+}
+
+#close-btn-inner {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  margin: 10px 10px 0px 0px;
+}
+
+#back-arrow-inner {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  margin: 22px;
+}
+#back-arrow img {
+  height: 30px;
+  width: 30px;
+}
+
+.btn-inner.arrow {
+  margin: 22px;
+  cursor: pointer;
+}
+
+.box,
+.show-box {
+  background: white;
+  position: relative;
+  border-radius: 40px 40px 0px 0px;
+  -webkit-box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 40%);
+  box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 40%);
+  margin: 0px auto;
+  height: 0px;
+  transition: 0.3s;
+}
+
+.product-box {
+  transition: 0.5s cubic-bezier(0.76, 0.1, 0.29, 0.9) !important;
+  height: 0px !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  background: #fff !important;
+}
+
+.show-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff !important;
+  z-index: 9999;
+  transition: 0.5s cubic-bezier(0.76, 0.1, 0.29, 0.9) !important;
+  height: 330px !important;
+  right: 0;
+}
+
+.show-box .box-inner {
+  padding: 0px 37px 30px 37px;
+  background: #fff;
+}
+
+.box-content {
+  background: red;
+  /*	position: relative;*/
+  height: 100%;
+  /*	width: 100%;*/
+  margin: 70px 40px 40px 40px;
+}
+
+.big-btn {
+  background: white;
+  border-radius: 100px;
+  border: none;
+  padding: 5px;
+  font-size: 24px;
+  font-family: "HoeflerText-Regular";
+  width: 176px;
+  -webkit-box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 40%);
+  box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 40%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.big-btn:active {
+  -webkit-box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 40%);
+  box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 40%);
+  transform: translateY(2px);
+  cursor: pointer;
+}
+
+.big-btn:hover {
+  background: rgb(245 245 245);
+}
+
+.inner-btn {
+  background: transparent;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid #d1a067;
+  color: #dd7a26;
+}
+
+.box-inner {
+  position: relative;
+  top: 80px;
+  font-size: 20px;
+  padding: 0px 37px 0px 37px;
+}
+/* .food-items-inner {
+  top: 20%;
+} */
+.menu-btn {
+  text-align: center;
+  font-family: "HoeflerText-Regular";
+  width: 100%;
+  padding: 15px;
+  color: #707070;
+  background: white;
+  border: 1px solid #707070;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 7px 0px 7px 0px;
+  transition: all 0.2s;
+}
+
+.menu-btn:hover {
+  background: rgb(245 245 245);
+  transition: all 0.2s;
+}
+
+.box-inner .grid-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 14px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box-inner.food-items-inner .grid-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 28px;
+  background-color: #fff;
+  color: #444;
+  justify-items: center;
+  row-gap: 33px;
+}
+
+.category {
+  background-color: #0000;
+  color: #fff;
+  border-radius: 5px;
+  color: #707070;
+  border: 1px solid #b3b3b3;
+  text-align: center;
+  padding: 19px 8px 19px 8px;
+  font-size: 150%;
+  font-family: "HoeflerText-Regular";
+  font-size: 15px;
+  cursor: pointer;
+  /* height: 41px;
+  width: 87px; */
+}
+
+.food-items {
+  background-color: #0000;
+  color: #fff;
+  border-radius: 5px;
+  color: #707070;
+  /* border: 1px solid #b3b3b3; */
+  text-align: center;
+  padding: 19px 13px 19px 13px;
+  font-size: 150%;
+  font-family: "HoeflerText-Regular";
+  font-size: 15px;
+  cursor: pointer;
+  /* height: 41px;
+  width: 87px; */
+}
+.food-items:hover {
+  background: #0000;
+  border: 1px solid #b3b3b3;
+}
+
+.food-items.cloned-item {
+  height: 41px;
+  width: 87px;
+}
+
+.category:hover {
+  background: #0000;
+  transition: all 0.2s;
+  border: 1px solid #b3b3b3;
+}
+
+/* Intro Screen */
+
+.introScreen {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.introScreen .fullPlate {
+  position: absolute;
+  top: -65vh;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+
+  width: 111vh;
+  animation: rotation 120s infinite linear;
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.99));
+}
+
+.introScreen h1 {
+  position: absolute;
+  margin: 0 auto;
+  top: 47vh;
+  /* display: block; */
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 5rem;
+  color: #719ae8;
+  font-family: "HoeflerText-Black";
+}
+.introScreen h2 {
+  position: absolute;
+  margin: 0 auto;
+  top: 60vh;
+  /* display: block; */
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 4rem;
+  color: #84c689;
+  font-family: "holidayfreeregular";
+}
+
+.introScreen p {
+  position: absolute;
+  margin: 0 auto;
+  top: 72vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  max-width: 40vh;
+  font-family: "HoeflerText-Regular";
+  color: #707070;
+}
+
+.introScreen .main-btns,
+.SelectScreen .main-btns {
+  position: absolute;
+  margin: 0 auto;
+  top: 85vh;
+  left: 0;
+  right: 0;
+}
+
+.introScreen .big-btn,
+.SelectScreen .big-btn {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Intro Screen */
+
+/* Select plate */
+
+.SelectScreen .iconButton {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto 0;
+  justify-content: space-between;
+  padding: 20px 30px 20px;
+}
+
+.selectSlider p {
+  text-align: center;
+}
+
+.selectSlider {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.selectSlider img {
+  margin: 0 auto;
+  max-width: 360px;
+}
+.selectSlider .slick-slider {
+  margin-top: 30px;
+}
+
+.selectSlider h4 {
+  text-align: center;
+  color: #86562b;
+  font-family: "HoeflerText-Black";
+  margin-bottom: 0;
+  margin-top: 40px;
+  font-size: 1.5rem;
+}
+
+.selectSlider .slick-slider p {
+  margin-top: 0;
+}
+
+.slick-next:before,
+[dir="rtl"] .slick-prev:before,
+.slick-prev:before {
+  content: "";
+}
+.slick-next {
+  background-image: url(assets/icons/right.svg) !important;
+  background-size: 100% !important;
+  height: 60px;
+  background-repeat: no-repeat !important;
+}
+.slick-prev {
+  background-image: url(assets/icons/left.svg) !important;
+  background-size: 100% !important;
+  height: 60px;
+  background-repeat: no-repeat !important;
+}
+
+/* Select plate */
+
+/* main screen */
+.MainScreen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.MainScreen img.Main-plate {
+  /* display: block;
+  max-width: 700px;
+  margin: 0 auto; */
+  width: 100%;
+}
+
+.MainScreen .EmptyPlate {
+  width: 35vw;
+  height: 35vw;
+  border-radius: 35vw;
+  margin: 0 auto;
+  /* filter: drop-shadow(-8px 8px 11px rgba(0, 0, 0, 0.69)); */
+
+  /*  box-shadow: -19px 20px 18px rgb(0 0 0 / 47%);
+  -moz-box-shadow: -19px 20px 18px rgb(0 0 0 / 47%);
+  -webkit-box-shadow: -19px 20px 18px rgb(0 0 0 / 47%);
+  -o-box-shadow: -19px 20px 18px rgb(0 0 0 / 47%);*/
+  /* border-radius: 50%;
+   */
+}
+
+.MainScreen .icons-screen {
+  max-width: 100%;
+  padding: 20px 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+.MainScreen .plateWapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainScreen .iconButtonupper {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 3px 0px;
+}
+.MainScreen .iconButtonlower {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto 0;
+  justify-content: space-between;
+  padding: 0px 30px;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.MainScreen .BottomIcons {
+  position: relative;
+}
+
+.MainScreen .icon-zoom {
+  display: flex;
+  /* padding: 15px 30px; */
+  margin-left: auto;
+}
+.MainScreen .icon-zoom img {
+  height: 30px;
+  width: 30px;
+}
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.food-items-inner .category {
+  height: 41px;
+  width: 87px;
+  border-radius: 14px;
+  position: relative;
+  background: white;
+  cursor: pointer;
+  margin: 0px 6px 7px 6px;
+  transition: all 0.2s;
+  border: 1px solid #7070705c;
+  display: inline-table;
+}
+.food-items-inner .category img {
+  height: 40px;
+  width: 100%;
+  object-fit: contain;
+}
+.setPlateItem img {
+  height: 40px;
+  width: 100%;
+  object-fit: contain;
+}
+.food-items-inner p {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+  color: #707070;
+  margin-bottom: 0;
+  padding-top: 3px;
+  white-space: nowrap;
+  font-family: arial;
+}
+
+/* button#back-arrow {
+  background: none;
+  border: none;
+  box-shadow: none;
+  height: 40px;
+  width: 40px;
+  margin: 18px;
+} */
+
+button#help img {
+  height: 42px;
+}
+
+.help-section img.video-sec {
+  width: 90px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.Food-item-clone {
+  height: 40px;
+  /* object-fit: contain; */
+  transition: height 0.2s;
+}
+.cloned-item {
+  position: absolute;
+  left: 1px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 5px;
+  transition: height 0.2s, border-color 0.1s;
+  /* border: 1px solid rgb(255 255 255 / 0%); */
+  /* filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, 0.59)); */
+  /* z-index: 9999 !important; */
+
+  /* height: 80px;
+  width: 80px; */
+}
+
+.modal {
+  z-index: 20000;
+}
+
+.cloned-item:hover {
+  border: 1px solid rgb(255 255 255 / 50%);
+  border-radius: 5px;
+  transition: border-color 0.2s;
+}
+
+.cloned-item:active {
+  border-radius: 5px;
+  transition: border-color 0.2s;
+}
+
+/* main screen */
+
+/* Transtion */
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateY(70%);
+  transition: all 500ms ease-in-out;
+  background: none !important;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateY(30px);
+  background: none !important;
+}
+
+/* .ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateY(0px);
+  background: none !important;
+} */
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateY(70%);
+}
+
+/* Transtion */
+
+.btn-check:focus + .btn,
+.btn:focus {
+  /*box-shadow: none;*/
+}
+
+/* Option Modal */
+
+.optionModal {
+  height: auto;
+  bottom: -150px;
+  top: inherit;
+}
+.optionModal .modal-dialog {
+  max-width: 400px;
+}
+
+.optionModal .modal-content {
+  background-color: #0000;
+  border: none;
+}
+
+.opacity {
+  opacity: 1;
+}
+
+p.fooditem-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+}
+
+/* .cloned-item-clicked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 18px;
+  background: #fff;
+  left: 0%;
+  margin: 0px auto;
+  top: -12px;
+  text-align: center;
+  right: 0;
+  transform: rotate(90deg);
+} */
+
+.cloned-item-clicked {
+  border: 1px solid #fff !important;
+}
+
+/* .cloned-item-clicked:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #fff;
+  top: -38px;
+  left: 30px;
+  border-radius: 50px;
+} */
+/* [data-corner] {
+  border-radius: 50%;
+  background: rgba(3, 169, 244, 0.3);
+  border: 1px solid rgba(3, 169, 244, 0.6);
+  transition: background 0.1s ease-out;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+[data-corner]:hover {
+  background: rgba(3, 169, 244, 0.6);
+}
+[data-corner]:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform: translate(-40%, -40%);
+} */
+.cloned-item-clicked .rotator {
+  position: absolute;
+  top: -9px;
+  right: -7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  cursor: nesw-resize;
+  background: #fff;
+}
+
+/* .cloned-item span.rotator {
+  display: none;
+} */
+
+/* .cloned-item-clicked span.rotator {
+    display: block;
+    left: 22px;
+    top: -54px;
+  } */
+
+/* .current-cloned-item {
+  border: 1px solid #f9fafb;
+} */
+
+button#layer-lower {
+  height: 56px;
+  width: 56px;
+  border-radius: 14px;
+  position: relative;
+  border: none;
+  background: white;
+  box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 40%);
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.2s;
+}
+
+.check {
+  background: #fff;
+  text-align: center;
+  padding: 10px;
+  float: left;
+  border-radius: 50%;
+  position: absolute;
+  top: 44%;
+  left: 46%;
+}
+
+.check span {
+  float: left;
+  width: 100%;
+  border: 1px solid #b48052;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.check img {
+  width: 30px;
+}
+
+button#layer-lower:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+/* .plateWapper {
+  width: 55vw;
+  margin: 0 auto;
+} */
+
+img.splendid-logo {
+  max-width: 200px;
+  margin: 0px auto;
+  display: block;
+  top: 56%;
+  position: relative;
+}
+
+/* .MainScreen .EmptyPlate {
+  top: -90px;
+} */
+
+p.c-text {
+  text-align: center;
+}
+
+.selectSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previous {
+  background: url("./assets/icons/left.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  color: transparent;
+  border: 0;
+  background-size: 100% 100%;
+  height: 59px;
+  margin: -80px 0px 0px;
+  left: -40px;
+  position: relative;
+}
+
+.next {
+  background: url("./assets/icons/right.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  color: transparent;
+  border: 0;
+  background-size: 100% 100%;
+  height: 59px;
+  margin: -80px 0px 0px;
+  right: -40px;
+  position: relative;
+}
+
+p.choose {
+  text-align: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: 50%;
+}
+
+.current-item-border {
+  border: 1px solid #fff;
+}
+
+.LongBoard {
+  background-size: 180px !important;
+  background-position: center !important;
+  width: 165px !important;
+  height: 700px !important;
+}
+
+.cloned-item {
+  filter: none !important;
+}
+
+.help-menu-box {
+  transition: 0.9s;
+}
+
+/* additional-css */
+
+/*non-moving item in initial position*/
+.box-inner.food-items-inner .grid-options div {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: 60px !important;
+}
+
+/*non-moving item in initial position (INVISIBLE)*/
+.food-items.a.setPlateItem.first-clone {
+  opacity: 1 !important;
+  height: 81px !important;
+  width: 81px !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: 60px !important;
+}
+
+/*moving item while dragging*/
+.food-items.a.setPlateItem.first-clone.current-cloned-item {
+  opacity: 1 !important;
+}
+
+/*item when finally placed on plate*/
+.food-items.a.setPlateItem.cloned-item.highlight {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.MappleBoard {
+  background-position: center !important;
+  background-size: 100% !important;
+  width: 260px !important;
+  height: 40vw !important;
+}
+
+.help-menu-box {
+  transition: 0.9s;
+  position: absolute;
+  bottom: 0 !important;
+  left: 0;
+  right: 0;
+  height: 0 !important;
+  overflow: hidden;
+}
+
+.hl-box {
+  height: 550px !important;
+  transition: 0.5s cubic-bezier(0.76, 0.1, 0.29, 0.9) !important;
+}
+
+.cloned-item {
+  filter: drop-shadow(rgba(0, 0, 0, 0.9) 2px 0px 5px) !important;
+}
+
+.listHelp h4 {
+  font-size: 20px;
+}
+
+.listHelp ol li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.credits h2 {
+  font-size: 20px;
+  text-align: center;
+  font-family: "HoeflerText-Italic";
+  color: #d1a067;
+}
+
+.credits a {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #000;
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: 300;
+}
+
+.credits p {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  margin: 20px 0px 0px;
+}
+
+.listHelp ol {
+  padding-left: 16px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1600px) {
+  .selectSlider {
+    max-width: 450px;
+  }
+
+  .slick-prev {
+    left: -40px;
+    top: 35%;
+  }
+  .slick-next {
+    right: -40px;
+    top: 35%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .food-items.a.setPlateItem.cloned-item.highlight {
+    background-size: 4.5vw;
+    height: 6vw;
+    width: 6vw;
+  }
+
+  .food-items.a.setPlateItem.Honey.cloned-item.highlight {
+    background-size: 9.5vw;
+    height: 10vw;
+    width: 11vw;
+  }
+
+  .food-items.a.setPlateItem.Mustard.cloned-item.highlight {
+    background-size: 7.2vw;
+    height: 7vw;
+    width: 8vw;
+  }
+
+  /*MEATS*/
+
+  .food-items.a.setPlateItem.Ham.Slices.cloned-item.highlight {
+    background-size: 7.2vw !important;
+    height: 8vw !important;
+    width: 8vw !important;
+  }
+
+  .food-items.a.setPlateItem.Prosciutto.cloned-item.highlight {
+    background-size: 7.2vw !important;
+    height: 9.2vw !important;
+    width: 9vw !important;
+  }
+
+  .food-items.a.setPlateItem.Salami.Slices.cloned-item.highlight {
+    background-size: 6.2vw !important;
+    height: 7vw !important;
+    width: 7.5vw !important;
+  }
+
+  /*CHEESE*/
+
+  .food-items.a.setPlateItem.Pepperjack.cloned-item.highlight {
+    background-size: 3.2vw !important;
+    height: 4.5vw !important;
+    width: 4.5vw !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .MainScreen .EmptyPlate {
+    width: 55vw !important;
+    height: 55vw !important;
+    /* border-radius: 55vw !important; */
+  }
+  .ui-example .box {
+    /* margin: 0px !important ; */
+  }
+
+  .check {
+    top: 45%;
+    left: 45%;
+  }
+
+  .food-items.a.setPlateItem.cloned-item.highlight {
+    background-size: 7.5vw !important;
+    height: 10vw !important;
+    width: 10vw !important;
+  }
+
+  .food-items.a.setPlateItem.Honey.cloned-item.highlight {
+    background-size: 15.2vw !important;
+    height: 15vw !important;
+    width: 17vw !important;
+  }
+
+  .food-items.a.setPlateItem.Mustard.cloned-item.highlight {
+    background-size: 11.2vw !important;
+    height: 10vw !important;
+    width: 12vw !important;
+  }
+
+  .food-items.a.setPlateItem.Salami.Slices.cloned-item.highlight {
+    background-size: 9.2vw !important;
+    height: 10vw !important;
+    width: 11vw !important;
+  }
+
+  /*MEATS*/
+
+  .food-items.a.setPlateItem.Ham.Slices.cloned-item.highlight {
+    background-size: 11.2vw !important;
+    height: 13vw !important;
+    width: 13vw !important;
+  }
+
+  .food-items.a.setPlateItem.Prosciutto.cloned-item.highlight {
+    background-size: 12.2vw !important;
+    height: 15vw !important;
+    width: 14vw !important;
+  }
+
+  .food-items.a.setPlateItem.Salami.Slices.cloned-item.highlight {
+    background-size: 10.2vw !important;
+    height: 11vw !important;
+    width: 13vw !important;
+  }
+
+  /*CHEESE*/
+
+  .food-items.a.setPlateItem.Pepperjack.cloned-item.highlight {
+    background-size: 4.7vw !important;
+    height: 6.5vw !important;
+    width: 6.5vw !important;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .MappleBoard {
+    background-size: 85% !important;
+    height: 37vw !important;
+  }
+
+  .LongBoard {
+    background-size: 65% !important;
+    height: 385px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .MappleBoard {
+    background-size: 65% !important;
+    height: 30vw !important;
+  }
+
+  .LongBoard {
+    background-size: 65% !important;
+    height: 385px !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+  /* .ui-example .c-box {
+    height: 520px !important;
+  } */
+
+  .MappleBoard {
+    background-size: 75% !important;
+    width: 212px !important;
+    height: 32vw !important;
+  }
+
+  .LongBoard {
+    background-size: 65% !important;
+    height: 385px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .introScreen .fullPlate {
+    left: -250px;
+  }
+
+  .ui-example .c-box {
+    transition: 0.5s cubic-bezier(0.76, 0.1, 0.29, 0.9) !important;
+  }
+
+  .MainScreen .CircularPlate {
+    height: 38vw !important;
+    width: 38vw !important;
+  }
+
+  .MainScreen .MappleBoard {
+    background-size: 70% !important;
+    width: 250px !important;
+    height: 39vw !important;
+  }
+
+  .MainScreen .LongBoard {
+    background-size: 45% !important;
+    height: 378px !important;
+    width: 240px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .introScreen .fullPlate {
+    left: -205px;
+  }
+
+  .MainScreen .CircularPlate {
+    height: 38vw !important;
+    width: 38vw !important;
+  }
+
+  .MainScreen .LongBoard {
+    background-size: 45% !important;
+    height: 378px !important;
+    width: 240px !important;
+  }
+  .MainScreen .MappleBoard {
+    background-size: 88% !important;
+    width: 190px !important;
+    height: 50vw !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .introScreen .fullPlate {
+    left: -34vh;
+  }
+  .selectSlider {
+    max-width: 100%;
+    justify-content: center;
+  }
+  .slick-next {
+    right: -40px;
+    top: 35%;
+  }
+  .slick-prev {
+    left: -40px;
+    top: 35%;
+  }
+
+  .MainScreen .iconButtonlower {
+    max-width: 700px;
+    padding: 20px 30px 40px;
+  }
+  .MainScreen .EmptyPlate {
+    width: 75vw !important;
+    height: 75vw !important;
+    /* border-radius: 75vw !important; */
+  }
+  .show-box {
+    width: 100%;
+  }
+
+  .food-items.a.setPlateItem.cloned-item.highlight {
+    background-size: 9.5vw !important;
+    height: 14vw !important;
+    width: 14vw !important;
+  }
+
+  .food-items.a.setPlateItem.Honey.cloned-item.highlight {
+    background-size: 19.2vw !important;
+    height: 18vw !important;
+    width: 22vw !important;
+  }
+
+  .food-items.a.setPlateItem.Mustard.cloned-item.highlight {
+    background-size: 14.2vw !important;
+    height: 13vw !important;
+    width: 17vw !important;
+  }
+
+  .previous {
+    left: 0px;
+  }
+  .next {
+    right: 0px;
+  }
+
+  /*MEATS*/
+
+  .food-items.a.setPlateItem.Ham.Slices.cloned-item.highlight {
+    background-size: 15.2vw !important;
+    height: 17vw !important;
+    width: 18vw !important;
+  }
+
+  .food-items.a.setPlateItem.Prosciutto.cloned-item.highlight {
+    background-size: 15.2vw !important;
+    height: 17vw !important;
+    width: 18vw !important;
+  }
+
+  .food-items.a.setPlateItem.Salami.Slices.cloned-item.highlight {
+    background-size: 11.2vw !important;
+    height: 13vw !important;
+    width: 14vw !important;
+  }
+
+  /*CHEESE*/
+
+  .food-items.a.setPlateItem.Pepperjack.cloned-item.highlight {
+    background-size: 6.2vw !important;
+    height: 8vw !important;
+    width: 8.5vw !important;
+  }
+
+  img.plate3 {
+    max-width: 190px;
+  }
+
+  .MainScreen .MappleBoard {
+    width: 208px !important;
+    height: 47vw !important;
+    background-size: 70% !important;
+  }
+
+  .MainScreen .LongBoard {
+    background-size: 53% !important;
+    height: 300px !important;
+    width: 160px !important;
+  }
+
+  .MainScreen .CircularPlate {
+    height: 38vw !important;
+    width: 38vw !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .MainScreen .MappleBoard {
+    width: 208px !important;
+    height: 63vw !important;
+    background-size: 70% !important;
+  }
+
+  .MainScreen .LongBoard {
+    background-size: 63% !important;
+    height: 300px !important;
+    width: 136px !important;
+  }
+
+  .MainScreen .CircularPlate {
+    height: 50vw !important;
+    width: 50vw !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .MainScreen .LongBoard {
+    background-size: 63% !important;
+    height: 300px !important;
+    width: 136px !important;
+  }
+
+  .CircularPlate {
+    height: 100vw !important;
+    width: 85vw !important;
+  }
+
+  .MappleBoard {
+    background-size: 45% !important;
+  }
+
+  .MainScreen .MappleBoard {
+    background-size: 85% !important;
+    width: 190px !important;
+    height: 100vw !important;
+  }
+
+  .MainScreen .CircularPlate {
+    height: 70vw !important;
+    width: 70vw !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .introScreen h1 {
+    font-size: 4.2rem;
+  }
+
+  .check {
+    top: 40%;
+    left: 39%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .MainScreen .MappleBoard {
+    background-size: 75% !important;
+    width: 190px !important;
+    height: 95vw !important;
+  }
+}

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "HoeflerText-Black";
+  src: url("HoeflerText-Black.eot");
+  src: url("HoeflerText-Black.eot?#iefix") format("embedded-opentype"),
+    url("HoeflerText-Black.svg#HoeflerText-Black") format("svg"),
+    url("HoeflerText-Black.ttf") format("truetype"),
+    url("HoeflerText-Black.woff") format("woff"),
+    url("HoeflerText-Black.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HoeflerText-BlackItalic";
+  src: url("HoeflerText-BlackItalic.eot");
+  src: url("HoeflerText-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("HoeflerText-BlackItalic.svg#HoeflerText-BlackItalic") format("svg"),
+    url("HoeflerText-BlackItalic.ttf") format("truetype"),
+    url("HoeflerText-BlackItalic.woff") format("woff"),
+    url("HoeflerText-BlackItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HoeflerText-Italic";
+  src: url("HoeflerText-Italic.eot");
+  src: url("HoeflerText-Italic.eot?#iefix") format("embedded-opentype"),
+    url("HoeflerText-Italic.svg#HoeflerText-Italic") format("svg"),
+    url("HoeflerText-Italic.ttf") format("truetype"),
+    url("HoeflerText-Italic.woff") format("woff"),
+    url("HoeflerText-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HoeflerText-Regular";
+  src: url("HoeflerText-Regular.eot");
+  src: url("HoeflerText-Regular.eot?#iefix") format("embedded-opentype"),
+    url("HoeflerText-Regular.svg#HoeflerText-Regular") format("svg"),
+    url("HoeflerText-Regular.ttf") format("truetype"),
+    url("HoeflerText-Regular.woff") format("woff"),
+    url("HoeflerText-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "holidayfreeregular";
+  src: url("holidayfree.woff2") format("woff2"),
+    url("holidayfree.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
